@@ -35,7 +35,7 @@ Chef::Log.info "Downloading and Installing Karaf to #{karaf_dir_root}/karaf-#{ka
 ark "karaf" do
   prefix_root "#{karaf_dir_root}"
   url "#{karaf_download_url}"
-  version "#{karaf_version}-#{karaf_revision}"
+  version "#{karaf_version}"
   checksum 'a3b5ad464ddb6acb55537e2bdba0342bf511798b0a32bed36b789a170cea9a79'
   owner "#{karaf_system_user}" 
   home_dir "#{karaf_dir_root}/karaf"
